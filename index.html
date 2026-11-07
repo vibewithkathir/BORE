@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree Manjunatha Swamy Borewells | Bangalore Hydraulic Rig Services</title>
+  <meta name="description" content="Superfast high-pressure hydraulic rig borewell drilling (6” &amp; 4½”) and pump installations in Haralur, Sarjapura Road, Bangalore. Owner: A.C. Naga Reddy. Mobile: 9739742633.">
+
+  <!-- Google Fonts: Space Grotesk, JetBrains Mono, Inter & Noto Sans Kannada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Noto+Sans+Kannada:wght@600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    // Theme Initializer
+    (function() {
+      try {
+        var saved = localStorage.getItem('sms_theme_pref');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var target = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', target);
+      try {
+        localStorage.setItem('sms_theme_pref', target);
+      } catch (e) {}
+      syncThemeUI(target);
+    }
+
+    function syncThemeUI(theme) {
+      var sun = document.getElementById('themeIconSun');
+      var moon = document.getElementById('themeIconMoon');
+      var label = document.getElementById('themeLabel');
+      var btn = document.getElementById('themeToggle');
+      if (!sun || !moon || !label || !btn) return;
+
+      if (theme === 'dark') {
+        sun.style.display = 'inline-block';
+        moon.style.display = 'none';
+        label.textContent = 'Light';
+        btn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        sun.style.display = 'none';
+        moon.style.display = 'inline-block';
+        label.textContent = 'Dark';
+        btn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      var active = document.documentElement.getAttribute('data-theme') || 'dark';
+      syncThemeUI(active);
+      var btn = document.getElementById('themeToggle');
+      if (btn) btn.addEventListener('click', toggleTheme);
+    });
+
+    // Copy to clipboard helper
+    function copyPhone() {
+      navigator.clipboard.writeText('9739742633').then(function() {
+        var toast = document.getElementById('copyToast');
+        if (toast) {
+          toast.classList.add('visible');
+          setTimeout(function() {
+            toast.classList.remove('visible');
+          }, 2400);
+        }
+      });
+    }
+  </script>
+
+  <style>
+    /* =============================================================
+       DESIGN SYSTEM: FULL TOP INDUSTRIAL ARCHITECTURE
+       Theme: Rich soil-brown earth neutrals, high-vis rig yellow,
+       crisp groundwater technical blue accents.
+       No gradients as decoration. Pure technical precision.
+    ============================================================= */
+    :root {
+      /* Light: Dense Quarry Sand & Clay */
+      --bg-base: #f6f3ed;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #eee7dc;
+      --bg-panel: #fcfbfa;
+      --bg-blueprint: #ece4d8;
+
+      --border-subtle: #ded3c3;
+      --border-medium: #c0b09d;
+      --border-strong: #6d5b49;
+
+      --text-main: #1c1611;
+      --text-muted: #574a3d;
+      --text-dim: #847463;
+
+      /* Rig Yellow */
+      --rig-yellow: #f5b700;
+      --rig-yellow-hover: #e6ab00;
+      --rig-yellow-active: #cc9700;
+      --rig-yellow-text: #140e01;
+      --rig-yellow-border: #997400;
+
+      /* Water Blue */
+      --water-blue: #0284c7;
+      --water-blue-light: #e0f2fe;
+      --water-blue-border: #38bdf8;
+      --water-blue-deep: #0369a1;
+
+      /* Geological layers */
+      --layer-topsoil: #c4ab91;
+      --layer-weathered: #aa937b;
+      --layer-granite: #7a6958;
+      --layer-aquifer: #0284c7;
+
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-kannada: 'Noto Sans Kannada', sans-serif;
+
+      --focus-ring: #0284c7;
+      --grid-bg: radial-gradient(#d3c6b6 1px, transparent 1px);
+      --box-depth: 0 4px 0 var(--border-medium);
+      --box-depth-active: 0 1px 0 var(--border-medium);
+    }
+
+    [data-theme="dark"] {
+      /* Dark: Deep Basalt & Crystalline Bedrock */
+      --bg-base: #110e0c;
+      --bg-surface: #1a1613;
+      --bg-surface-elevated: #241e19;
+      --bg-panel: #1e1914;
+      --bg-blueprint: #15110e;
+
+      --border-subtle: #302821;
+      --border-medium: #493c31;
+      --border-strong: #786452;
+
+      --text-main: #f7f3ee;
+      --text-muted: #cfc2b5;
+      --text-dim: #998a7c;
+
+      /* Rig Yellow */
+      --rig-yellow: #f5b700;
+      --rig-yellow-hover: #ffc41f;
+      --rig-yellow-active: #e6ab00;
+      --rig-yellow-text: #140e01;
+      --rig-yellow-border: #f5b700;
+
+      /* Water Blue */
+      --water-blue: #38bdf8;
+      --water-blue-light: #082f49;
+      --water-blue-border: #0284c7;
+      --water-blue-deep: #7dd3fc;
+
+      /* Geological layers */
+      --layer-topsoil: #382c21;
+      --layer-weathered: #2b2219;
+      --layer-granite: #1d1712;
+      --layer-aquifer: #082f49;
+
+      --focus-ring: #38bdf8;
+      --grid-bg: radial-gradient(#29211a 1px, transparent 1px);
+      --box-depth: 0 4px 0 var(--border-strong);
+      --box-depth-active: 0 1px 0 var(--border-strong);
+    }
+
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-base);
+      background-image: var(--grid-bg);
+      background-size: 24px 24px;
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    /* Machine Plate Reticle Styling */
+    .plate-panel {
+      position: relative;
+      background: var(--bg-surface);
+      border: 2px solid var(--border-medium);
+      border-radius: 6px;
+      box-shadow: var(--box-depth);
+    }
+
+    .plate-panel::before, .plate-panel::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-color: var(--border-strong);
+      pointer-events: none;
+    }
+    .plate-panel::before {
+      top: -2px;
+      left: -2px;
+      border-top: 3px solid var(--border-strong);
+      border-left: 3px solid var(--border-strong);
+    }
+    .plate-panel::after {
+      bottom: -2px;
+      right: -2px;
+      border-bottom: 3px solid var(--border-strong);
+      border-right: 3px solid var(--border-strong);
+    }
+
+    /* -------------------------------------------------------------
+       HEADER / NAV BAR
+    ------------------------------------------------------------- */
+    .site-header {
+      border-bottom: 2px solid var(--border-medium);
+      background-color: var(--bg-surface);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      gap: 1rem;
+    }
+
+    .brand-cluster {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-hydraulic-badge {
+      width: 46px;
+      height: 46px;
+      background: var(--rig-yellow);
+      color: var(--rig-yellow-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      border: 2px solid var(--border-strong);
+      flex-shrink: 0;
+    }
+
+    .brand-hydraulic-badge svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.2;
+    }
+
+    .brand-meta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .brand-core-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-main);
+      line-height: 1.15;
+    }
+
+    .brand-meta-line {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .brand-kannada-header {
+      font-family: var(--font-kannada);
+      font-size: 0.825rem;
+      font-weight: 700;
+      color: var(--water-blue);
+      line-height: 1.2;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .theme-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 0.45rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 40px;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .theme-toggle-btn:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-surface);
+    }
+
+    .header-call-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--rig-yellow);
+      color: var(--rig-yellow-text);
+      padding: 0.5rem 1.15rem;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.95rem;
+      border: 1.5px solid var(--border-strong);
+      min-height: 40px;
+      box-shadow: 0 2px 0 var(--border-strong);
+      transition: all 0.15s ease;
+    }
+    .header-call-cta:hover {
+      background: var(--rig-yellow-hover);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 720px) {
+      .header-call-cta {
+        display: none;
+      }
+      .brand-core-title {
+        font-size: 1rem;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 1: HERO & INTERACTIVE GEOLOGICAL DEPTH RULER
+    ------------------------------------------------------------- */
+    .hero-section {
+      padding-top: 3.25rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 2px solid var(--border-medium);
+      background-color: var(--bg-surface);
+      position: relative;
+    }
+
+    .hero-split-grid {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 2.25rem;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .hero-split-grid {
+        grid-template-columns: 140px 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero-split-grid {
+        grid-template-columns: 86px 1fr;
+        gap: 1rem;
+      }
+      .hero-section {
+        padding-top: 1.75rem;
+        padding-bottom: 2rem;
+      }
+    }
+
+    /* Interactive Geological Strata Ruler (0' to 600') */
+    .strata-ruler-console {
+      background: var(--bg-blueprint);
+      border: 2px solid var(--border-medium);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      padding: 0.75rem 0.5rem;
+      position: relative;
+      user-select: none;
+    }
+
+    .ruler-console-title {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--text-dim);
+      border-bottom: 1.5px dashed var(--border-medium);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .ruler-strata-stack {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      min-height: 380px;
+    }
+
+    .strata-marker-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 0.35rem 0.25rem;
+      border-radius: 3px;
+      transition: background 0.15s ease;
+      cursor: default;
+    }
+
+    .strata-marker-row:hover {
+      background: var(--bg-surface);
+    }
+
+    .strata-depth-readout {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      line-height: 1;
+    }
+
+    .strata-lithology-tag {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-dim);
+    }
+
+    @media (max-width: 680px) {
+      .strata-lithology-tag {
+        display: none;
+      }
+    }
+
+    .strata-notches {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .strata-bar {
+      width: 12px;
+      height: 2px;
+      background: var(--border-strong);
+    }
+
+    /* 500' and 600' Aquifer Highlight */
+    .strata-marker-row.aquifer-zone {
+      background: var(--water-blue-light);
+      border: 1px solid var(--water-blue-border);
+    }
+
+    .strata-marker-row.aquifer-zone .strata-depth-readout {
+      color: var(--water-blue);
+      font-weight: 800;
+    }
+
+    .strata-marker-row.aquifer-zone .strata-bar {
+      background: var(--water-blue);
+      height: 3px;
+      width: 18px;
+    }
+
+    .aquifer-target-banner {
+      margin-top: 0.65rem;
+      background: var(--water-blue);
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 800;
+      text-align: center;
+      padding: 0.35rem 0.25rem;
+      border-radius: 3px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Hero Text & Controls */
+    .hero-lead-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .kannada-official-crest {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 0.4rem 0.95rem;
+      border-radius: 4px;
+      font-family: var(--font-kannada);
+      font-size: 0.95rem;
+      font-weight: 700;
+      width: fit-content;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .kannada-crest-icon {
+      color: var(--rig-yellow);
+      font-size: 1rem;
+    }
+
+    .hero-main-heading {
+      font-size: clamp(2.1rem, 5.2vw, 3.4rem);
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 1.15rem;
+      letter-spacing: -0.035em;
+      line-height: 1.12;
+    }
+
+    .hero-main-heading .mark-yellow {
+      color: var(--rig-yellow);
+      display: inline;
+      text-decoration: underline;
+      text-decoration-color: var(--border-strong);
+      text-underline-offset: 6px;
+      text-decoration-thickness: 3px;
+    }
+
+    .hero-core-description {
+      font-size: clamp(1.05rem, 2.2vw, 1.22rem);
+      color: var(--text-muted);
+      max-width: 740px;
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+    /* Hardware Specifications Strip */
+    .specs-hardware-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .hardware-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-medium);
+      padding: 0.45rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-family: var(--font-mono);
+      color: var(--text-main);
+    }
+
+    .hardware-chip .chip-label {
+      color: var(--text-dim);
+      font-weight: 500;
+      font-size: 0.725rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .hardware-chip .chip-value {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .hero-actions-dock {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.15rem;
+    }
+
+    /* Full-Top Button System */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1rem 1.85rem;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.05rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      min-height: 54px;
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+
+    .btn:active {
+      transform: translateY(2px);
+    }
+
+    .btn-rig-bold {
+      background-color: var(--rig-yellow);
+      color: var(--rig-yellow-text);
+      border: 2px solid var(--border-strong);
+      box-shadow: 0 4px 0 var(--border-strong);
+    }
+    .btn-rig-bold:hover {
+      background-color: var(--rig-yellow-hover);
+      box-shadow: 0 5px 0 var(--border-strong);
+      transform: translateY(-1px);
+    }
+    .btn-rig-bold:active {
+      box-shadow: 0 1px 0 var(--border-strong);
+      transform: translateY(3px);
+    }
+
+    .btn-whatsapp-bold {
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      border: 2px solid var(--border-strong);
+      box-shadow: 0 4px 0 var(--border-medium);
+    }
+    .btn-whatsapp-bold:hover {
+      background-color: var(--bg-surface-elevated);
+      border-color: var(--text-main);
+      box-shadow: 0 5px 0 var(--border-medium);
+      transform: translateY(-1px);
+    }
+    .btn-whatsapp-bold:active {
+      box-shadow: 0 1px 0 var(--border-medium);
+      transform: translateY(3px);
+    }
+
+    .btn-icon-svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+
+    @media (max-width: 640px) {
+      .hero-actions-dock {
+        flex-direction: column;
+        width: 100%;
+      }
+      .hero-actions-dock .btn {
+        width: 100%;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       SECTION SYSTEM
+    ------------------------------------------------------------- */
+    .section-wrap {
+      padding-top: 4.75rem;
+      padding-bottom: 4.75rem;
+      border-bottom: 2px solid var(--border-medium);
+    }
+
+    .section-header-cluster {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-field-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--water-blue);
+      background: var(--water-blue-light);
+      border: 1px solid var(--water-blue-border);
+      padding: 0.3rem 0.75rem;
+      border-radius: 3px;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-display-title {
+      font-size: clamp(1.85rem, 4vw, 2.6rem);
+      color: var(--text-main);
+      margin-bottom: 0.65rem;
+      line-height: 1.18;
+    }
+
+    .section-subtitle-text {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 2: SERVICES (4 TECHNICAL BLOCKS)
+    ------------------------------------------------------------- */
+    .services-grid-spec {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .service-machine-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--border-medium);
+      border-radius: 6px;
+      padding: 2rem 1.65rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: var(--box-depth);
+      transition: all 0.2s ease;
+    }
+
+    .service-machine-card:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 var(--border-strong);
+    }
+
+    .service-machine-card.primary-spec {
+      background: var(--bg-surface-elevated);
+      border-color: var(--border-strong);
+    }
+
+    .service-spec-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+    }
+
+    .spec-code-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--text-dim);
+    }
+
+    .spec-badge-pill {
+      background: var(--rig-yellow);
+      color: var(--rig-yellow-text);
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+      border: 1px solid var(--border-strong);
+    }
+
+    .service-svg-schematic {
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--border-strong);
+      background: var(--bg-surface);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.35rem;
+      color: var(--text-main);
+    }
+
+    .service-svg-schematic svg {
+      width: 32px;
+      height: 32px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+    }
+
+    .service-block-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .service-plain-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-footer-spec {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.775rem;
+      color: var(--text-dim);
+      border-top: 1.5px dashed var(--border-medium);
+      padding-top: 0.85rem;
+      font-weight: 700;
+    }
+
+    .spec-status-indicator {
+      width: 7px;
+      height: 7px;
+      background: var(--rig-yellow);
+      border-radius: 50%;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 3: BORE SIZES (6" vs 4½") BLUEPRINT BENCHMARK
+    ------------------------------------------------------------- */
+    .bore-section-wrapper {
+      background-color: var(--bg-surface);
+    }
+
+    .bore-engineering-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.25rem;
+      align-items: stretch;
+    }
+
+    @media (max-width: 768px) {
+      .bore-engineering-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bore-blueprint-plate {
+      background: var(--bg-panel);
+      border: 2px solid var(--border-medium);
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: var(--box-depth);
+      position: relative;
+    }
+
+    .bore-blueprint-plate.featured-benchmark {
+      background: var(--bg-surface-elevated);
+      border-color: var(--border-strong);
+      box-shadow: 0 6px 0 var(--border-strong);
+    }
+
+    .bore-plate-category {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      margin-bottom: 1.75rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      padding: 0.3rem 0.85rem;
+      border-radius: 4px;
+    }
+
+    .bore-cross-section-stage {
+      width: 230px;
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 1.75rem;
+    }
+
+    /* True Mechanical Blueprint Circles */
+    .mechanical-bore-ring {
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: var(--bg-surface);
+      box-shadow: 0 0 0 2px var(--border-medium);
+    }
+
+    /* 6-inch Diameter */
+    .ring-diameter-6in {
+      width: 206px;
+      height: 206px;
+      border: 12px solid var(--text-main);
+      box-shadow: 0 0 0 2px var(--border-strong), inset 0 0 0 4px var(--water-blue);
+    }
+
+    /* 4.5-inch Diameter (true scale 154px : 206px) */
+    .ring-diameter-4half {
+      width: 154px;
+      height: 154px;
+      border: 9px solid var(--text-muted);
+      box-shadow: 0 0 0 2px var(--border-strong), inset 0 0 0 3px var(--water-blue);
+    }
+
+    .bore-metric-dimension {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text-main);
+      letter-spacing: -0.04em;
+    }
+
+    .ring-diameter-4half .bore-metric-dimension {
+      font-size: 1.95rem;
+    }
+
+    .bore-metric-mm {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-top: 0.25rem;
+    }
+
+    .bore-flow-pill {
+      margin-top: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--water-blue);
+      background: var(--water-blue-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+    }
+
+    .bore-unit-name {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .bore-application-pill {
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--text-main);
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-strong);
+      padding: 0.35rem 0.95rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .bore-features-list {
+      list-style: none;
+      text-align: left;
+      width: 100%;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border-top: 1.5px dashed var(--border-medium);
+      padding-top: 1.5rem;
+    }
+
+    .bore-features-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .bore-features-list li::before {
+      content: "✔";
+      color: var(--rig-yellow);
+      font-weight: 900;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 4: CONTACT & DISPATCH HEADQUARTERS
+    ------------------------------------------------------------- */
+    .contact-command-panel {
+      background: var(--bg-surface);
+      border: 2px solid var(--border-strong);
+      border-radius: 8px;
+      box-shadow: 0 6px 0 var(--border-strong);
+      overflow: hidden;
+    }
+
+    .command-header-bar {
+      background: var(--bg-surface-elevated);
+      border-bottom: 1.5px solid var(--border-medium);
+      padding: 0.85rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .command-fleet-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .pulse-dot {
+      width: 10px;
+      height: 10px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+    }
+
+    .command-zone-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+
+    .command-layout-body {
+      padding: clamp(2rem, 4.5vw, 3rem);
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 2.75rem;
+    }
+
+    @media (max-width: 840px) {
+      .command-layout-body {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+      }
+    }
+
+    .phone-callout-zone {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .phone-tag-label {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+    }
+
+    .massive-phone-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-family: var(--font-display);
+      font-size: clamp(2.35rem, 6.5vw, 3.4rem);
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      border-bottom: 4px solid var(--rig-yellow);
+      padding-bottom: 0.4rem;
+      width: fit-content;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .massive-phone-link:hover {
+      color: var(--water-blue);
+      border-bottom-color: var(--water-blue);
+    }
+
+    .owner-registry-card {
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-medium);
+      padding: 1.15rem 1.4rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .owner-registry-card strong {
+      color: var(--text-main);
+      font-weight: 800;
+    }
+
+    .contact-action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn-copy-tactile {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 0.5rem 0.95rem;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: fit-content;
+    }
+    .btn-copy-tactile:hover {
+      border-color: var(--border-strong);
+    }
+
+    @media (max-width: 640px) {
+      .contact-action-row {
+        flex-direction: column;
+      }
+      .contact-action-row .btn {
+        width: 100%;
+      }
+    }
+
+    /* Address Box */
+    .address-card-enclosure {
+      background: var(--bg-blueprint);
+      border: 2px solid var(--border-medium);
+      border-radius: 6px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .address-tag-header {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      margin-bottom: 0.85rem;
+    }
+
+    .address-text-full {
+      font-size: 1.1rem;
+      color: var(--text-main);
+      line-height: 1.65;
+      font-style: normal;
+      margin-bottom: 1.75rem;
+    }
+
+    .maps-anchor-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.975rem;
+      color: var(--water-blue);
+      background: var(--bg-surface);
+      border: 2px solid var(--border-strong);
+      padding: 0.85rem 1.4rem;
+      border-radius: 4px;
+      width: fit-content;
+      transition: all 0.15s ease;
+      box-shadow: 0 3px 0 var(--border-medium);
+    }
+    .maps-anchor-button:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--water-blue);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 0 var(--border-medium);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 5: FOOTER (DEMO COMPLIANCE NOTE)
+    ------------------------------------------------------------- */
+    .site-footer {
+      border-top: 2px solid var(--border-medium);
+      background-color: var(--bg-surface);
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+    }
+
+    @media (min-width: 641px) {
+      .site-footer {
+        padding-bottom: 3.5rem;
+      }
+    }
+
+    .footer-content-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.35rem;
+    }
+
+    .demo-cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-strong);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.825rem;
+      font-weight: 700;
+      padding: 0.5rem 1.15rem;
+      border-radius: 4px;
+    }
+
+    .footer-exact-service {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      line-height: 1.6;
+    }
+
+    /* -------------------------------------------------------------
+       MOBILE QUICK ACTIONS FIXED DOCK
+    ------------------------------------------------------------- */
+    .mobile-tactical-dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background-color: var(--bg-surface);
+      border-top: 2px solid var(--border-strong);
+      padding: 0.75rem 1rem;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.25);
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .mobile-tactical-dock {
+        display: block;
+      }
+    }
+
+    .dock-grid-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .dock-touch-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 0.5rem;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      min-height: 48px;
+    }
+
+    .dock-touch-btn.call {
+      background-color: var(--rig-yellow);
+      color: var(--rig-yellow-text);
+      border: 1.5px solid var(--border-strong);
+    }
+
+    .dock-touch-btn.whatsapp {
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      border: 1.5px solid var(--border-strong);
+    }
+
+    /* Toast Notification */
+    .toast-popup {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--text-main);
+      color: var(--bg-surface);
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+    .toast-popup.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER / NAV BAR
+  ========================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand-cluster">
+        <div class="brand-hydraulic-badge" aria-hidden="true">
+          <!-- Heavy hydraulic bit vector -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2v14M6 6l6-4 6 4M7 16l5 6 5-6M4 11h16" />
+          </svg>
+        </div>
+        <div class="brand-meta-group">
+          <a href="#hero" class="brand-core-title">
+            Sree Manjunatha Swamy Borewells
+          </a>
+          <span class="brand-meta-line">Prop. A.C. Naga Reddy &bull; Haralur, Bangalore</span>
+          <span class="brand-kannada-header" lang="kn">ಶ್ರೀ ಮಂಜುನಾಥ ಸ್ವಾಮಿ ಬೋರ್‌ವೆಲ್ಸ್</span>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <!-- Light / Dark Mode Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg id="themeIconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="themeLabel">Light</span>
+        </button>
+
+        <!-- Direct Header Call -->
+        <a href="tel:9739742633" class="header-call-cta" aria-label="Call 9739742633">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span>9739742633</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         SECTION 1: HERO & BANGALORE STRATA DEPTH RULER
+    ========================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-split-grid">
+
+          <!-- Architectural Vertical Depth Ruler (0' to 600') -->
+          <aside class="strata-ruler-console plate-panel" aria-label="Bangalore geological drilling depth ruler 0 to 600 feet">
+            <div class="ruler-console-title">DEPTH RULER (FT)</div>
+
+            <div class="ruler-strata-stack" aria-hidden="true">
+              <!-- 0' Surface Soil -->
+              <div class="strata-marker-row">
+                <span class="strata-depth-readout">0'</span>
+                <span class="strata-lithology-tag">Topsoil</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 100' Weathered Rock -->
+              <div class="strata-marker-row">
+                <span class="strata-depth-readout">100'</span>
+                <span class="strata-lithology-tag">Weathered</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 200' Hard Granite -->
+              <div class="strata-marker-row">
+                <span class="strata-depth-readout">200'</span>
+                <span class="strata-lithology-tag">Granite</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 300' Fracture Zone -->
+              <div class="strata-marker-row">
+                <span class="strata-depth-readout">300'</span>
+                <span class="strata-lithology-tag">Fracture</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 400' Hard Bedrock -->
+              <div class="strata-marker-row">
+                <span class="strata-depth-readout">400'</span>
+                <span class="strata-lithology-tag">Bedrock</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 500' Aquifer Strike -->
+              <div class="strata-marker-row aquifer-zone">
+                <span class="strata-depth-readout">500'</span>
+                <span class="strata-lithology-tag" style="color:var(--water-blue);">Aquifer</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+
+              <!-- 600' Deep Aquifer Yield -->
+              <div class="strata-marker-row aquifer-zone">
+                <span class="strata-depth-readout">600'</span>
+                <span class="strata-lithology-tag" style="color:var(--water-blue);">Water</span>
+                <div class="strata-notches"><span class="strata-bar"></span></div>
+              </div>
+            </div>
+
+            <div class="aquifer-target-banner" aria-hidden="true">
+              DEEP WATER STRIKE
+            </div>
+          </aside>
+
+          <!-- Main Hero Column -->
+          <div class="hero-lead-column">
+            <div class="kannada-official-crest" lang="kn">
+              <span class="kannada-crest-icon">★</span>
+              <span>ವೇಗದ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ಬೋರ್‌ವೆಲ್ ಕೊರೆಯುವ ಸೇವೆ</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-main-heading">
+              Drilling of 6" and 4½" borewells by <span class="mark-yellow">superfast high-pressure hydraulic rigs</span>
+            </h1>
+
+            <p class="hero-core-description">
+              Fast, high-precision borewell drilling and pump installations for independent houses, apartment communities, and commercial plots across Bangalore.
+            </p>
+
+            <!-- Metadata Badges -->
+            <div class="specs-hardware-strip" role="note">
+              <div class="hardware-chip">
+                <span class="chip-label">Owner:</span>
+                <span class="chip-value">A.C. Naga Reddy</span>
+              </div>
+              <div class="hardware-chip">
+                <span class="chip-label">Base:</span>
+                <span class="chip-value">Haralur, Sarjapura Road</span>
+              </div>
+              <div class="hardware-chip">
+                <span class="chip-label">Standard Sizes:</span>
+                <span class="chip-value">6" &amp; 4½"</span>
+              </div>
+              <div class="hardware-chip">
+                <span class="chip-label">Technology:</span>
+                <span class="chip-value">High-Pressure Hydraulic</span>
+              </div>
+            </div>
+
+            <!-- Two Action Buttons -->
+            <div class="hero-actions-dock">
+              <a href="tel:9739742633" class="btn btn-rig-bold" id="heroCallBtn" aria-label="Call now on 9739742633">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>Call now (9739742633)</span>
+              </a>
+
+              <a href="https://wa.me/919739742633?text=Hello%20A.C.%20Naga%20Reddy%20sir,%20I%20would%20like%20to%20inquire%20about%20borewell%20drilling%20in%20Bangalore." class="btn btn-whatsapp-bold" id="heroWhatsAppBtn" target="_blank" rel="noopener noreferrer" aria-label="Message A.C. Naga Reddy on WhatsApp">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.78 14.07c-.24.67-1.38 1.28-1.92 1.36-.51.08-1.18.11-3.38-.8-2.82-1.17-4.63-4.04-4.77-4.23-.14-.19-1.14-1.52-1.14-2.9 0-1.38.72-2.06.98-2.34.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.66.5.24.57.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.51-.15.18-.31.4-.44.54-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.15.47.13.64-.07.18-.2.76-.89.96-1.19.2-.31.41-.26.68-.16.28.1 1.76.83 2.06.98.3.15.5.23.57.35.08.13.08.74-.16 1.41z"/>
+                </svg>
+                <span>Message on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2: SERVICES (4 TECHNICAL SPEC BLOCKS)
+    ========================================================== -->
+    <section id="services" class="section-wrap" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header-cluster">
+          <div class="section-field-tag">CAPABILITIES &amp; INVENTORY</div>
+          <h2 id="services-title" class="section-display-title">Drilling &amp; Pumping Services</h2>
+          <p class="section-subtitle-text">
+            Heavy hydraulic drilling rigs, and authorized dealers in submersible, jet, and hand pumps.
+          </p>
+        </div>
+
+        <div class="services-grid-spec">
+
+          <!-- Block 1: Borewell Drilling -->
+          <article class="service-machine-card primary-spec plate-panel">
+            <div class="service-spec-header">
+              <span class="spec-code-tag">SPEC // 01</span>
+              <span class="spec-badge-pill">Primary Rig Service</span>
+            </div>
+            <div class="service-svg-schematic" aria-hidden="true">
+              <!-- Hydraulic Rig Bit -->
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2v20M7 7l5-5 5 5M7 17l5 5 5-5M4 12h16" />
+              </svg>
+            </div>
+            <h3 class="service-block-title">Borewell Drilling</h3>
+            <p class="service-plain-desc">
+              Superfast drilling of 6" and 4½" borewells by high-pressure hydraulic rigs engineered to penetrate hard Bangalore granite and deep rock formations.
+            </p>
+            <div class="service-footer-spec">
+              <span class="spec-status-indicator"></span>
+              <span>6" &amp; 4½" Hydraulic Rig</span>
+            </div>
+          </article>
+
+          <!-- Block 2: Submersible Pumps -->
+          <article class="service-machine-card plate-panel">
+            <div class="service-spec-header">
+              <span class="spec-code-tag">SPEC // 02</span>
+              <span>DEALER</span>
+            </div>
+            <div class="service-svg-schematic" aria-hidden="true">
+              <!-- Submersible Cylinder -->
+              <svg viewBox="0 0 24 24">
+                <rect x="7" y="3" width="10" height="18" rx="2" />
+                <path d="M7 8h10M7 13h10M12 3v-2M12 21v2" />
+              </svg>
+            </div>
+            <h3 class="service-block-title">Submersible Pumps</h3>
+            <p class="service-plain-desc">
+              High-efficiency multi-stage submersible pumps designed for deep water tables and continuous overhead tank replenishment.
+            </p>
+            <div class="service-footer-spec">
+              <span class="spec-status-indicator"></span>
+              <span>Dealers in Submersible Pumps</span>
+            </div>
+          </article>
+
+          <!-- Block 3: Jet Pumps -->
+          <article class="service-machine-card plate-panel">
+            <div class="service-spec-header">
+              <span class="spec-code-tag">SPEC // 03</span>
+              <span>DEALER</span>
+            </div>
+            <div class="service-svg-schematic" aria-hidden="true">
+              <!-- Jet Pump Motor -->
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="7" />
+                <path d="M12 5V2M12 22v-3M19 12h3M2 12h3M8 12a4 4 0 008 0" />
+              </svg>
+            </div>
+            <h3 class="service-block-title">Jet Pumps</h3>
+            <p class="service-plain-desc">
+              Durable surface-installed jet pump assemblies for moderate depth domestic water extraction and reliable house water flow.
+            </p>
+            <div class="service-footer-spec">
+              <span class="spec-status-indicator"></span>
+              <span>Dealers in Jet Pumps</span>
+            </div>
+          </article>
+
+          <!-- Block 4: Hand Pumps -->
+          <article class="service-machine-card plate-panel">
+            <div class="service-spec-header">
+              <span class="spec-code-tag">SPEC // 04</span>
+              <span>DEALER</span>
+            </div>
+            <div class="service-svg-schematic" aria-hidden="true">
+              <!-- Manual Hand Lever -->
+              <svg viewBox="0 0 24 24">
+                <path d="M6 18h12M12 18V9M9 9h6M9 9l-5 4M15 9l5-2M10 5h4v4h-4z" />
+              </svg>
+            </div>
+            <h3 class="service-block-title">Hand Pumps</h3>
+            <p class="service-plain-desc">
+              Sturdy manual mechanical hand pumps for reliable, zero-power emergency and site groundwater access.
+            </p>
+            <div class="service-footer-spec">
+              <span class="spec-status-indicator"></span>
+              <span>Dealers in Hand Pumps</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3: BORE SIZES (6" vs 4½") BLUEPRINT VISUAL
+    ========================================================== -->
+    <section id="bore-sizes" class="section-wrap bore-section-wrapper" aria-labelledby="bore-title">
+      <div class="container">
+        <div class="section-header-cluster">
+          <div class="section-field-tag">DIMENSIONING &amp; STANDARDS</div>
+          <h2 id="bore-title" class="section-display-title">Bore Sizes Visual Comparison</h2>
+          <p class="section-subtitle-text">
+            True-to-scale visual comparison between 6" and 4½" bore diameters to guide homeowners and facility managers.
+          </p>
+        </div>
+
+        <div class="bore-engineering-grid">
+
+          <!-- 6-inch Diameter Card -->
+          <article class="bore-blueprint-plate featured-benchmark plate-panel">
+            <span class="bore-plate-category">High Capacity Benchmark</span>
+
+            <div class="bore-cross-section-stage" aria-label="Visual schematic of 6 inch borewell">
+              <div class="mechanical-bore-ring ring-diameter-6in">
+                <span class="bore-metric-dimension">6"</span>
+                <span class="bore-metric-mm">152 mm Dia</span>
+                <span class="bore-flow-pill">High Discharge Yield</span>
+              </div>
+            </div>
+
+            <h3 class="bore-unit-name">6 Inch Borewell</h3>
+            <span class="bore-application-pill">Recommended for Apartments &amp; Commercial</span>
+
+            <ul class="bore-features-list">
+              <li>Accommodates large 4" and 5" high-yield submersible pumps</li>
+              <li>Maximum groundwater collection and rapid overhead tank refill</li>
+              <li>Engineered for high daily consumption layouts and complexes</li>
+              <li>Drilled by superfast high-pressure hydraulic rig</li>
+            </ul>
+          </article>
+
+          <!-- 4.5-inch Diameter Card -->
+          <article class="bore-blueprint-plate plate-panel">
+            <span class="bore-plate-category">Domestic Precision Setup</span>
+
+            <div class="bore-cross-section-stage" aria-label="Visual schematic of 4.5 inch borewell">
+              <div class="mechanical-bore-ring ring-diameter-4half">
+                <span class="bore-metric-dimension">4½"</span>
+                <span class="bore-metric-mm">114 mm Dia</span>
+                <span class="bore-flow-pill">Independent Home Standard</span>
+              </div>
+            </div>
+
+            <h3 class="bore-unit-name">4½ Inch Borewell</h3>
+            <span class="bore-application-pill">Ideal for Single Houses &amp; Narrow Plots</span>
+
+            <ul class="bore-features-list">
+              <li>Accommodates standard 3" and 3.5" submersible pump sets</li>
+              <li>Compact drilling footprint for 30x40 and 40x60 residential sites</li>
+              <li>Faster rig maneuvering in tight residential driveways and lanes</li>
+              <li>Deep bedrock penetration with high hydraulic pressure</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4: CONTACT & DISPATCH HEADQUARTERS
+    ========================================================== -->
+    <section id="contact" class="section-wrap" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header-cluster">
+          <div class="section-field-tag">DISPATCH &amp; DIRECT CONTACT</div>
+          <h2 id="contact-title" class="section-display-title">Reach Out to A.C. Naga Reddy</h2>
+          <p class="section-subtitle-text">
+            Speak directly with the owner for site inspection, ground water point guidance, and rig booking.
+          </p>
+        </div>
+
+        <div class="contact-command-panel plate-panel">
+          
+          <!-- Dispatch status bar -->
+          <div class="command-header-bar">
+            <div class="command-fleet-status">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Rig Fleet Stationed in Haralur / Sarjapura Belt</span>
+            </div>
+            <div class="command-zone-tag">
+              PIN: 560 102 &bull; East Bangalore Zone
+            </div>
+          </div>
+
+          <div class="command-layout-body">
+            <!-- Left: Instant Calling & WhatsApp -->
+            <div class="phone-callout-zone">
+              <div class="phone-tag-label">Tap to Call Directly</div>
+
+              <a href="tel:9739742633" class="massive-phone-link" aria-label="Call 9739742633 directly">
+                <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>9739742633</span>
+              </a>
+
+              <button type="button" class="btn-copy-tactile" onclick="copyPhone()" title="Copy phone number">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy 9739742633</span>
+              </button>
+
+              <div class="owner-registry-card">
+                <div><strong>Business:</strong> Sree Manjunatha Swamy Borewells</div>
+                <div><strong>Owner:</strong> A.C. Naga Reddy</div>
+                <div><strong>Dealers in:</strong> Submersible, Jet and Hand Pumps</div>
+              </div>
+
+              <div class="contact-action-row">
+                <a href="tel:9739742633" class="btn btn-rig-bold" id="contactCallBtn">
+                  <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                  <span>Call 9739742633</span>
+                </a>
+
+                <a href="https://wa.me/919739742633?text=Hello%20A.C.%20Naga%20Reddy%20sir,%20I%20would%20like%20to%20inquire%20about%20borewell%20drilling%20in%20Bangalore." class="btn btn-whatsapp-bold" id="contactWhatsAppBtn" target="_blank" rel="noopener noreferrer">
+                  <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.78 14.07c-.24.67-1.38 1.28-1.92 1.36-.51.08-1.18.11-3.38-.8-2.82-1.17-4.63-4.04-4.77-4.23-.14-.19-1.14-1.52-1.14-2.9 0-1.38.72-2.06.98-2.34.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.66.5.24.57.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.51-.15.18-.31.4-.44.54-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.15.47.13.64-.07.18-.2.76-.89.96-1.19.2-.31.41-.26.68-.16.28.1 1.76.83 2.06.98.3.15.5.23.57.35.08.13.08.74-.16 1.41z"/>
+                  </svg>
+                  <span>WhatsApp Message</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Office Address & Maps link -->
+            <div class="address-card-enclosure plate-panel">
+              <div>
+                <div class="address-tag-header">Office &amp; Yard Location</div>
+                <address class="address-text-full">
+                  <strong>Sree Manjunatha Swamy Borewells</strong><br>
+                  #78/9, Gurumurthy Reddy Building,<br>
+                  Opp. Old Govt. School, Haralur,<br>
+                  Sarjapura Road, Bangalore – 560 102
+                </address>
+              </div>
+
+              <!-- Google Maps Link to Haralur, Sarjapura Road -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Gurumurthy+Reddy+Building+Haralur+Sarjapura+Road+Bangalore+560102" class="maps-anchor-button" id="mapLinkBtn" target="_blank" rel="noopener noreferrer" aria-label="Open location in Google Maps">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Open in Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       SECTION 5: FOOTER (DEMO SITE NOTE)
+  ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content-wrap">
+      <div class="demo-cert-badge" role="note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span>Demonstration Website &bull; Built for Sree Manjunatha Swamy Borewells</span>
+      </div>
+
+      <p class="footer-exact-service">
+        Service: Drilling of 6" and 4½" borewells by superfast high-pressure hydraulic rigs &bull; Bangalore, Karnataka.
+      </p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       FIXED MOBILE TACTICAL DOCK
+  ========================================================== -->
+  <aside class="mobile-tactical-dock" aria-label="Quick contact actions">
+    <div class="dock-grid-actions">
+      <a href="tel:9739742633" class="dock-touch-btn call" id="mobileDockCallBtn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span>Call Now</span>
+      </a>
+
+      <a href="https://wa.me/919739742633?text=Hello%20A.C.%20Naga%20Reddy%20sir,%20I%20would%20like%20to%20inquire%20about%20borewell%20drilling." class="dock-touch-btn whatsapp" id="mobileDockWhatsAppBtn" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.78 14.07c-.24.67-1.38 1.28-1.92 1.36-.51.08-1.18.11-3.38-.8-2.82-1.17-4.63-4.04-4.77-4.23-.14-.19-1.14-1.52-1.14-2.9 0-1.38.72-2.06.98-2.34.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.66.5.24.57.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.51-.15.18-.31.4-.44.54-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.15.47.13.64-.07.18-.2.76-.89.96-1.19.2-.31.41-.26.68-.16.28.1 1.76.83 2.06.98.3.15.5.23.57.35.08.13.08.74-.16 1.41z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Quick Copy Toast Notification -->
+  <div id="copyToast" class="toast-popup" role="status" aria-live="polite">
+    Copied 9739742633 to clipboard
+  </div>
+
+</body>
+</html>
